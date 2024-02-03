@@ -1,2 +1,2 @@
 venv/
-src/Package/exploratorio.ipynb
+src/Package/*.ipynb
