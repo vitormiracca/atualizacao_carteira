@@ -1,0 +1,13 @@
+{
+  "Realtime Currency Exchange Rate": {
+    "1. From_Currency Code": "BTC",
+    "2. From_Currency Name": "Bitcoin",
+    "3. To_Currency Code": "BRL",
+    "4. To_Currency Name": "Brazilian Real",
+    "5. Exchange Rate": "138055.39147000",
+    "6. Last Refreshed": "2023-07-30 20:52:06",
+    "7. Time Zone": "UTC",
+    "8. Bid Price": "138055.39147000",
+    "9. Ask Price": "138055.43878400"
+  }
+}
