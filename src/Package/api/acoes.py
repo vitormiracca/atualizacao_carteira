@@ -10,7 +10,7 @@ def obter_cotacao_acao(ativo_carteira):
     ativo_yf = ajusta_ticker_yf(ativo_carteira)
     try:
         ticker = yf.Ticker(ativo_yf)
-        cotacao = ticker.get_fast_info().last_price
+        cotacao = round(ticker.get_fast_info().last_price, 2)
 
     except Exception as e:
             mensagem_erro = f'Erro Ticker YF: {str(e)}'

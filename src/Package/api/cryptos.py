@@ -7,7 +7,7 @@ def obter_cotacao_crypto(symbol):
 
     try:
         ticker = exchange.fetch_ticker(symbol)
-        cotacao = ticker['close']
+        cotacao = round(ticker['close'],2)
         mensagem_erro = None
     
     except ccxt.NetworkError as e:

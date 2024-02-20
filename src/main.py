@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 ### IMPORTS ###
 from traceback import print_tb
 import warnings
@@ -20,7 +22,7 @@ print("""
 
 ######## SCRIPT - Atualizacao Cotacao Atual #########
 
-caminho_csv = r'D:\Finanças Pessoais\Analytics\Cotacoes.csv'
+caminho_csv = r'D:\Finanças Pessoais\Analytics\Cotacoes.xlsx'
 
 ativos = db.tupla_ativos()
 result_df = pd.DataFrame()
@@ -41,7 +43,9 @@ for categoria in ativos:
         df_ignorados = pd.DataFrame(registros_ignorados)
         result_df = pd.concat([result_df, df_ignorados])
 
-result_df.to_csv(caminho_csv, index=False)
+print(result_df)
+
+result_df.to_excel(caminho_csv, index=False)
 
 print('''
 ######################
